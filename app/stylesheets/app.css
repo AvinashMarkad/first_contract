@@ -1,39 +1,61 @@
-/*body {
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 10%;
+/* Use a flexible container for the body content */
+body {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
-}*/
+  padding: 0 10%;
+  box-sizing: border-box;
+}
+
+/* Responsive margin for different screen sizes */
+@media (max-width: 1200px) {
+  body {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 2%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0 1%;
+  }
+}
 
 label {
   display: inline-block;
-  width: 100px;
+  width: 100%;
+  max-width: 200px; /* Adjust as necessary */
+  box-sizing: border-box;
 }
 
 button {
-  font-size: 16px;
-  padding: 5px;
+  font-size: 1rem; /* Use rem units for better scalability */
+  padding: 0.5rem; /* Use rem units for better scalability */
 }
 
 h1, h2 {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  display: block; /* Change to block for better stacking on small screens */
+  margin-top: 0;
+  margin-bottom: 0.5rem; /* Adjust spacing for consistency */
 }
 
 h2 {
   color: #AAA;
-  font-size: 32px;
+  font-size: 2rem; /* Use rem units for scalability */
 }
 
 h3 {
   font-weight: normal;
   color: #AAA;
-  font-size: 24px;
+  font-size: 1.5rem; /* Use rem units for scalability */
 }
 
 * {
   padding: 0;
-  margin: 0
+  margin: 0;
+  box-sizing: border-box;
 }
